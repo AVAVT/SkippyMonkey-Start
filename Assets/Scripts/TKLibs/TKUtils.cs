@@ -38,14 +38,4 @@ public class TKUtils : MonoBehaviour{
 		}
 		return newObject.GetComponent<T>();
 	}
-
-    public static T Instantiate<T>(GameObject prefab, Vector3 position, Quaternion rotation)
-    {
-        GameObject newObject = Instantiate(prefab, position, Quaternion.identity) as GameObject;
-        if (newObject.transform is RectTransform)
-        {
-            (newObject.transform as RectTransform).anchoredPosition3D = position;
-        }
-        return newObject.GetComponent<T>();
-    }
 }

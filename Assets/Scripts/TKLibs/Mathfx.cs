@@ -98,7 +98,6 @@ public class Mathfx
 		}
 		else retval =  start+(end-start)*value;
 
-		// Debug.Log("Start: "  + start + "   End: " + end + "  Value: " + value + "  Half: " + half + "  Diff: " + diff + "  Retval: " + retval);
 		return retval;
 	}
 
